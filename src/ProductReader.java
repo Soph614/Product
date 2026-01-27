@@ -32,7 +32,6 @@ public class ProductReader {
                 while(reader.ready()) {
                     line = reader.readLine();
                     String [] dataElements;
-                    String [] indexElements;
                     dataElements = line.split(", ");
                     dataOutput = String.format("%-8s %-20s %-40s %10s", dataElements);
                     System.out.print(dataOutput);

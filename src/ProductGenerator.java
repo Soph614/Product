@@ -26,9 +26,8 @@ public class ProductGenerator {
             cost = SafeInput.getRangedDouble(in, "Enter the cost", 0, 1000000000);
             // create the record
 
-            Product product = new Product(name, description, ID, cost);
+            Product product = new Product(ID, name, description, cost);
             productRecords.add(product);
-            System.out.println(productRecords);
 
             done = SafeInput.getYNConfirm(in, "Are you done?");
         }while (!done);
